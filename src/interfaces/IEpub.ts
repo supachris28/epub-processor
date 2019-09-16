@@ -6,4 +6,6 @@ export interface IEpub {
   manifest: IManifest;
   toc: IToc;
   coverExtractor: ICoverExtractor;
+  initialise(): Promise<void>;
+  process(): Promise<void>;
 }

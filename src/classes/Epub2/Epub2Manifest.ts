@@ -1,13 +1,16 @@
 import { IManifest } from '../../interfaces/IManifest';
 import { IFile } from '../../interfaces/IFile';
 import { IDirectory } from '../../interfaces/IDirectory';
+import { ILogger } from '../../interfaces/ILogger';
 
 export class Epub2Manifest implements IManifest {
+  private logger: ILogger;
   private spine: string[];
   private rawFile: IFile;
   private dir: IDirectory;
 
-  public constructor(dir: IDirectory) {
+  public constructor(dir: IDirectory, logger: ILogger) {
+    this.logger = logger;
     this.spine = [];
     this.dir = dir;
   }

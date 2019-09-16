@@ -4,11 +4,13 @@ import { ITocChapter } from '../../interfaces/ITocChapter';
 import { IDirectory } from '../../interfaces/IDirectory';
 
 export class Epub2TocNcx implements IToc {
+  private logger: ILogger;
   private ncx: IFile;
   private dir: IDirectory;
   private chapters: ITocChapter[];
 
-  public constructor(dir: IDirectory) {
+  public constructor(dir: IDirectory, logger: ILogger) {
+    this.logger = logger;
     this.dir = dir;
     this.chapters = [];
   }
