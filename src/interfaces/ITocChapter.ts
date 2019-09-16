@@ -1,7 +1,7 @@
 import { ITocSection } from "./ITocSection";
 
 export interface ITocChapter {
-    title: String;
-    sections: ITocSection[];
-    order: number;
+  title: String;
+  sections: ITocSection[];
+  order: number;
 }

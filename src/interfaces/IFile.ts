@@ -1,4 +1,4 @@
 export interface IFile {
-    fileName: string;
-    getContents(): Buffer;
+  fileName: string;
+  getContents(): Buffer;
 }
