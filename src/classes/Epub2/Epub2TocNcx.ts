@@ -2,6 +2,7 @@ import { IFile } from '../../interfaces/IFile';
 import { IToc } from '../../interfaces/IToc';
 import { ITocChapter } from '../../interfaces/ITocChapter';
 import { IDirectory } from '../../interfaces/IDirectory';
+import { ILogger } from '../../interfaces/ILogger';
 
 export class Epub2TocNcx implements IToc {
   private logger: ILogger;
